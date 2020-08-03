@@ -50,4 +50,4 @@ maximum sequence gap length: 50
 
 subject chain length: 119, abs dihedral dev: 0.254350, match start index 11, seg_1 length 10, gap length 31, seg_2 length 10
 ```
-Where the last output line represents a match with from a subject chain of length 119 residues. The match starts at the 11th amino acid and the optimal gap length is 31 amino acids, with 10 upstream and 10 downstream residues matched with an average dihedral deviation between query and subject of 0.25 radians, and the match fullfiled the interfragment average distance cutoff. 
+Where the last output line represents a signle hit found along a subject chain of length 119 residues. The match starts at the 11th amino acid and the optimal gap length is 31 amino acids, with 10 upstream and 10 downstream residues matched with an average dihedral deviation between query and subject of 0.25 radians, and the match fullfiled the interfragment average distance cutoff. 
