@@ -52,5 +52,5 @@ subject chain length: 119, abs dihedral dev: 0.254350, match start index 11, seg
 ```
 The above is an example search using a two-segment fragment from the G-CSF structure (PDB:2D9Q), against a helical bundle domain of unkown function (PDB:2QUP). 
 
-Where the last output line represents a signle hit found along a subject chain of length 119 residues. The match starts at the 11th amino acid and the optimal gap length is 31 amino acids, with 10 upstream and 10 downstream residues matched with an average dihedral deviation between query and subject of 0.25 radians, and the match fullfiled the interfragment average distance cutoff. 
+Where the last output lines represents two different hits found along a subject chain of length 119 residues. The matches starts at the 11th or the 29th amino acid and the optimal gap lengths are 31 and 2 amino acids, respectively, with 10 upstream and 10 downstream residues matched with an average dihedral deviation between query and subject of 0.25 or 0.35 radians, and the match fullfiled the interfragment average distance cutoff of 0.4 Angstroms. 
 
