@@ -35,19 +35,20 @@ input parameters:
 ## Example usage
 
 ```
-$ ./geo_mtch_fex.py -q frg.pdb -s 2qup.pdb -d .4 -a 0.3 -1 10 -2 10 -b 1 -e 1 -n 2 -x 50
+$ ./geo_mtch_fex.py -q frg.pdb -s 2qup.pdb -d 0.4 -a 0.5 -1 10 -2 10 -b 1 -e 1 -n 2 -x 500
 --backbone geometric search with params: 
 query: frg.pdb 
 subject: 2qup.pdb
 spacing cutoff: 0.400000
-dihedral deviation cutoff: 0.300000
+dihedral deviation cutoff: 0.500000
 segment 1 length: 10 
 segment 2 length: 10 
 segment 1 start position: 1 
 segment end reverse position: 1
 minimum sequence gap length: 2
-maximum sequence gap length: 50
+maximum sequence gap length: 500
 
+subject chain length: 119, abs dihedral dev: 0.354196, match start index 29, seg_1 length 10, gap length 2, seg_2 length 10
 subject chain length: 119, abs dihedral dev: 0.254350, match start index 11, seg_1 length 10, gap length 31, seg_2 length 10
 ```
 The above is an example search using a two-segment fragment from the G-CSF structure (PDB:2D9Q), against a helical bundle domain of unkown function (PDB:2QUP). 
