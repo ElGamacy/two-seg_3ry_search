@@ -12,8 +12,7 @@ This routine was used to neofunctionalise simple and small proteins into granulo
   
 ## Usage
 
-```sh
-$ cd dillinger
+```
 $ ./geo_mtch_fex.py -q qry_fn.pdb -s sbj_fn.pdb -d 0.2 -a 0.2 -1 10 -2 10 -b 1 -e 1 -n 2 -x 50
 ```
 This attempts to find matches between an input 2-segment fragment defined by a backbone dihedrals vector <img src="https://render.githubusercontent.com/render/math?math=(\phi_1, \psi_1, .., \phi_n, \psi_n)">, and four centroid position vectors\; <img src="https://render.githubusercontent.com/render/math?math=\textbf{p_1}, \textbf{p_2},\textbf{p_3}, \textbf{p_4}">. These four centroids represent the centres of mass of the first residue in the first segment, the last residue in the first segment, the first residue on the second segment, and the last residue on the second segment. A sliding window with these segment sizes and a variable gap size is used to scan the subject structure for the segment pair that matches the backbone dihedrals and end-to-end orientation of the segments residues to that of the query. The search cutoffs thus define the maximum average dihedral deviation permitted, and the maximum average <img src="https://render.githubusercontent.com/render/math?math=\textbf{p_{1,2}} \leftrightarrow \textbf{p_{4,3}}"> distance permitted. 
